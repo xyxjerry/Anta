@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>购物车</title>
+    <style>
+        img {
+            width: 80px;
+        }
+        
+        ul {
+            list-style: none;
+        }
+        
+        .minus,
+        .plus,
+        .del {
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <input type="checkbox" name="" id="checkAll">
+    <ul id="cart-list">
+
+    </ul>
+    <span id="totalPrice"></span>
+    <script src="../js/jquery1.11.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="../js/cart.js"></script>
+    <script>
+        document.onselectstart = new Function("event.returnValue=false;"); //阻止选中
+    </script>
+</body>
+
+</html>

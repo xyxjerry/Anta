@@ -17,7 +17,7 @@ window.onload = function() {
             }
         }
         if (Psd.value == '') {
-            alert('请输入图片验证码')
+            alert('请输入密码')
             return
         }
         if (acc.checked = false) {
